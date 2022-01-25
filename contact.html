@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./contact.css">
+    <title>Contact Us-SHRTY</title>
+</head>
+<body>
+    <header>
+        <div class="navbar"><h1>SHRTY</h1></div>
+        <section class="menu ">
+          <ul class="menu-list">
+            <li><a href="index.html">HOME</a></li>
+            <li class="active"><a href="./contact.html">Contact Us</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./login.php">Log In</a></li>
+          </ul>
+          <button>
+            <i class="fas fa-times"></i>
+            <i class="fas fa-bars"></i>
+          </button>
+        </section>
+    </header>
+    <div class="head">
+      <div class="text">
+        <h2>Contact</h2>
+        <h2>Us...</h2>
+      </div>
+    </div>
+    <div class="middle m-3">
+  
+  <div class="container">
+    <div class="content">
+      <div class="left-side">
+        <div class="address details">
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="topic">Address</div>
+          <div class="text-one">Colombo</div>
+          <div class="text-two">Sri Lanka</div>
+        </div>
+        <div class="phone details">
+          <i class="fas fa-phone-alt"></i>
+          <div class="topic">Phone</div>
+          <div class="text-one">0789010055</div>
+          
+        </div>
+        <div class="email details">
+          <i class="fas fa-envelope"></i>
+          <div class="topic">Email</div>
+          <div class="text-one">noelvta@gmail.com</div>
+          <div class="text-two">info.shrty@gmail.com</div>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="topic-text">Send us a message</div>
+        <p>If you have any work from me or any types of quries related to my tutorial, you can send me message from here. It's my pleasure to help you.</p>
+      <form action="./php/mail.php" method="post">
+        <div class="input-box">
+          <input type="text" name="name" placeholder="Enter your name">
+        </div>
+        <div class="input-box">
+          <input type="text" name="mail" placeholder="Enter your email">
+        </div>
+        <div class="input-box">
+            <input type="text" name="subject" placeholder="Subject">
+          </div>
+        <div class="input-box message-box">
+          <input type="text" name="message" placeholder="Message Here">
+        </div>
+        <div class="button">
+          <input type="submit" value="Send" >
+        </div>
+      </form>
+    </div>
+    </div>
+  </div>
+  </div>
+
+<div class="map-area m-3">
+    <div class="row">
+    <div class="col-md-2">
+        &nbsp;
+    </div>
+    <div class="col-md-8">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63371.815297074645!2d79.82118587995384!3d6.921837369630911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae253d10f7a7003%3A0x320b2e4d32d3838d!2sColombo%2C%20Sri%20Lanka!5e0!3m2!1sen!2sar!4v1642779936952!5m2!1sen!2sar" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    </div>
+    <div class="col-md-2">
+        &nbsp;
+    </div>
+
+</div>
+</div>
+<div class="footer-dark">
+    <footer>
+        <div class="containerr">
+            <div class="row">
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Web development</a></li>
+                        <li><a href="#">Software Development</a></li>
+                        <li><a href="#">Android Development</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3 item">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="#">Portfolio</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="col-md-6 item text">
+                    <h3>Shrty</h3>
+                    <p>SHRTY!! is a link shortner website which provide all their services for free!</p>
+                </div>
+                <div class="col item social"><a href="https://www.linkedin.com/in/ruvindu-nilnuwan"><i class="fab fa-linkedin"></i></a><a href="https://github.com/RuvinduNilnuwan"><i class="fab fa-github"></i></a><a href="#"><i class="fas fa-link"></i></a><a href="#"><i class="fab fa-twitter"></i></a></div>
+            </div>
+            <p class="copyright">Shrty Made with <i class="fas fa-heart"></i> In <img
+  src="https://flagcdn.com/16x12/lk.png"
+  srcset="https://flagcdn.com/32x24/lk.png 2x,
+  https://flagcdn.com/48x36/lk.png 3x"
+  width="16"
+  height="12"
+  alt="Sri Lanka"> © 2022</p> 
+        </div>
+    </footer>
+  </div>
+
+
+
+
+
+
+
+
+
+    <script>
+        var menu = document.querySelector('.menu');
+        var menuBtn = document.querySelector('.menu button');
+        menuBtn.addEventListener('click',() =>{
+          menu.classList.toggle('opend')
+        })
+        </script>
+      
+          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+      <script src="./script.js"></script>
+
+
+</body>
+</html>
